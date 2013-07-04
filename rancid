@@ -1979,11 +1979,11 @@ sub DoNothing {print STDOUT;}
 # Main
 @commandtable = (
 	{'show version'			=> 'ShowVersion'},
-	{'show redundancy secondary'	=> 'ShowRedundancy'},
-	{'show idprom backplane',	=> 'ShowIDprom'},
-	{'show install active'		=> 'ShowInstallActive'},
-	{'show env all'			=> 'ShowEnv'},
-	{'show rsp chassis-info',	=> 'ShowRSP'},
+	{'show redundancy secondary'	=> 'ShowRedundancy'},               #not for maipu
+	{'show idprom backplane',	=> 'ShowIDprom'},                   #not for maipu
+	{'show install active'		=> 'ShowInstallActive'},            #not for maipu
+	{'show env all'			=> 'ShowEnv'},                      #not for maipu
+	{'show rsp chassis-info',	=> 'ShowRSP'},                       
 	{'show gsr chassis'		=> 'ShowGSR'},
 	{'show diag chassis-info'	=> 'ShowGSR'},
 	{'show boot'			=> 'ShowBoot'},
@@ -2020,7 +2020,7 @@ sub DoNothing {print STDOUT;}
 	{'dir /all sec-slot1:'		=> 'DirSlotN'},
 	{'dir /all sec-disk1:'		=> 'DirSlotN'},
 	{'dir /all sec-slot2:'		=> 'DirSlotN'},
-	{'dir /all sec-disk2:'		=> 'DirSlotN'},
+	{'dir /all sec-disk2:'		=> 'DirSlotN'},                                   #not for maipu
 	{'show controllers'		=> 'ShowContAll'},
 	{'show controllers cbus'	=> 'ShowContCbus'},
 	{'show diagbus'			=> 'ShowDiagbus'},
